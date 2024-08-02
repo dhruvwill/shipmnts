@@ -1,8 +1,12 @@
 import React from "react";
 import { IoMdSearch } from "react-icons/io";
 import { Input } from "@/components/ui/input";
+import { cn } from "@/lib/utils";
 
-type Props = {};
+type Props = {
+  className?: string;
+  placeholder?: string;
+};
 
 const SearchBar = (props: Props) => {
   return (
@@ -10,8 +14,8 @@ const SearchBar = (props: Props) => {
       <IoMdSearch size={20} />
       <Input
         type="search"
-        placeholder="Go to File"
-        className="w-full !border-0 h-8 font-semibold bg-transparent !outline-none !ring-0"
+        placeholder={props.placeholder}
+        className={cn(props.className)}
       />
     </div>
   );

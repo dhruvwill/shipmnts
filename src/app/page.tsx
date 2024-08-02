@@ -10,11 +10,14 @@ export default function Home() {
     <main className="min-h-screen flex">
       <div className="p-5 min-w-[250px] flex flex-col gap-2">
         <div className="flex items-center w-full max-w-sm space-x-2 rounded-lg border border-gray-300 bg-secondary dark:bg-gray-900 px-3.5 py-2">
-          <SearchBar />
+          <SearchBar
+            placeholder="Go to File"
+            className="w-full !border-0 h-8  font-semibold bg-transparent !outline-none !ring-0"
+          />
         </div>
         <TreeView />
       </div>
-      <div className="p-5">
+      <div className="p-5 flex w-full">
         <FileList />
       </div>
     </main>
