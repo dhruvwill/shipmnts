@@ -24,6 +24,15 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from "@/components/ui/dialog";
+
 import SearchBar from "./SearchBar";
 import { Button } from "./ui/button";
 import { IoMdAddCircleOutline, IoMdArrowDropdown } from "react-icons/io";
