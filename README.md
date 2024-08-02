@@ -5,6 +5,12 @@ Time (3 hrs)
 
 Approach : Develop this app using nextjs 14. Frontend and backend resides in the same directory. use server actions and api for backend code. use prisma as ORM, use zustand for global state management, use react query (tanstack) for data fetching.
 
+How would it work
+
+- Any updates to file will done using api. call an api on events like file/folder creation.
+- trigger a refetch using react-query 'invalidateQueries' to fetch folder structure again.
+- store the fetched data in zustand store. this store should be used to render file ui.
+
 ### Directory Struture
 
 - / (Root) : root of the directory
